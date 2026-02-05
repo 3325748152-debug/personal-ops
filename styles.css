@@ -401,6 +401,17 @@ textarea#notes {
   font-size: 0.95rem;
 }
 
+.footer-contact {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+.footer-contact a {
+  color: var(--sea);
+  text-underline-offset: 3px;
+}
+
 .app-view {
   position: fixed;
   inset: 0;
