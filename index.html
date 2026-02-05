@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Linear Algebra Compass</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="grid-sheen"></div>
+    </div>
+
+    <header class="top">
+      <div class="brand">
+        <span class="brand-mark">LA</span>
+        <div>
+          <div class="brand-name" data-i18n="brand">Linear Algebra Compass</div>
+          <div class="brand-sub" data-i18n="brand_sub">Learn concepts. Recall ideas. Connect the map.</div>
+        </div>
+      </div>
+      <div class="lang-toggle" role="group" aria-label="Language toggle">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1 data-i18n="hero_title">Your bilingual linear algebra companion</h1>
+          <p data-i18n="hero_body">
+            English is primary, Chinese is here to bridge intuition. Explore the knowledge map, trigger recall, and
+            keep a personal notebook — no drill problems, just concept clarity.
+          </p>
+          <div class="hero-actions">
+            <button class="pill" id="shuffle-review" type="button" data-i18n="hero_cta">
+              Shuffle today’s recall
+            </button>
+            <span class="hero-note" data-i18n="hero_note">Auto-saves your notes locally.</span>
+          </div>
+        </div>
+        <div class="hero-card" id="daily-review">
+          <div class="card-eyebrow" data-i18n="daily_title">Daily recall</div>
+          <div class="card-question" id="daily-question"></div>
+          <div class="card-answer" id="daily-answer"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2 data-i18n="map_title">Knowledge map</h2>
+          <p data-i18n="map_body">A curated list of concepts. Click any card to read its quick recall focus.</p>
+        </div>
+        <div class="grid" id="topic-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2 data-i18n="recall_title">Quick recall cards</h2>
+          <p data-i18n="recall_body">Tap to flip. Use these when you want to refresh a concept in 60 seconds.</p>
+        </div>
+        <div class="grid" id="recall-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2 data-i18n="formula_title">Core formulas & definitions</h2>
+          <p data-i18n="formula_body">Short, practical statements that build intuition and memory.</p>
+        </div>
+        <div class="list" id="formula-list"></div>
+      </section>
+
+      <section class="section two-column">
+        <div>
+          <div class="section-head">
+            <h2 data-i18n="connections_title">Concept connections</h2>
+            <p data-i18n="connections_body">
+              See how topics lean on each other. Use this to choose what to review next.
+            </p>
+          </div>
+          <div class="chips" id="connections"></div>
+        </div>
+        <div>
+          <div class="section-head">
+            <h2 data-i18n="plan_title">Study flow</h2>
+            <p data-i18n="plan_body">A lightweight rhythm you can repeat each week.</p>
+          </div>
+          <div class="steps" id="study-steps"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2 data-i18n="notes_title">My linear algebra notebook</h2>
+          <p data-i18n="notes_body">Write your own summaries or mental images. Everything stays in your browser.</p>
+        </div>
+        <textarea id="notes" placeholder="Write your notes here..."></textarea>
+      </section>
+    </main>
+
+    <section class="app-view" id="applications-view" aria-hidden="true">
+      <div class="app-panel">
+        <button class="back-btn" id="app-back" type="button" data-i18n="app_back">Back</button>
+        <div class="app-hero">
+          <div class="app-eyebrow" data-i18n="app_eyebrow">Application room</div>
+          <h2 data-i18n="app_title">Connect ideas to the real world</h2>
+          <p data-i18n="app_body">
+            Pick one case, read the linear algebra lens, and write a two-sentence bridge.
+          </p>
+        </div>
+        <div class="app-grid" id="app-cases"></div>
+        <div class="app-section">
+          <h3 data-i18n="app_bridge_title">Bridge checklist</h3>
+          <div class="list" id="app-bridge"></div>
+        </div>
+        <div class="app-section">
+          <h3 data-i18n="app_booster_title">Learning boosters</h3>
+          <div class="list" id="app-boosters"></div>
+        </div>
+        <div class="app-section">
+          <h3 data-i18n="app_pitfall_title">Common pitfalls</h3>
+          <div class="list" id="app-pitfalls"></div>
+        </div>
+        <div class="app-section">
+          <h3 data-i18n="app_prompt_title">Mini prompts</h3>
+          <div class="grid" id="app-prompts"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div data-i18n="footer">Made for calm, focused learning. Update the topics as your course evolves.</div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
