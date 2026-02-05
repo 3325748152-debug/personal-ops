@@ -6,7 +6,6 @@ const i18n = {
     hero_body:
       'English is primary, Chinese is here to bridge intuition. Explore the knowledge map, trigger recall, and keep a personal notebook — no drill problems, just concept clarity.',
     hero_cta: "Shuffle today's recall",
-    hero_note: 'Auto-saves your notes locally.',
     daily_title: 'Daily recall',
     map_title: 'Knowledge map',
     map_body: 'A curated list of concepts. Each card includes a quick recall focus.',
@@ -319,9 +318,8 @@ const i18n = {
     brand_sub: '学概念、做回忆、连接知识地图。',
     hero_title: '你的双语线性代数伙伴',
     hero_body:
-      '英文为主，中文帮助理解。这里不刷题，只做知识点梳理、快速回忆和个人笔记。',
+      '通过知识点梳理、快速回忆和个人笔记来学习线性代数。',
     hero_cta: '随机今日回忆',
-    hero_note: '笔记会自动保存在本地浏览器。',
     daily_title: '今日回忆',
     map_title: '知识地图',
     map_body: '整理好的知识点列表。每张卡片都有快速回忆提示。',
