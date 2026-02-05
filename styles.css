@@ -31,6 +31,10 @@ body.app-open {
   overflow: hidden;
 }
 
+body.topic-open {
+  overflow: hidden;
+}
+
 .bg {
   position: fixed;
   inset: 0;
@@ -264,6 +268,13 @@ main {
   font-size: 0.95rem;
 }
 
+.card-cta {
+  margin-top: 12px;
+  font-size: 0.84rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .card-tag {
   display: inline-flex;
   align-items: center;
@@ -382,6 +393,14 @@ main {
   font-size: 0.95rem;
 }
 
+.map-card {
+  border: 1px solid rgba(228, 87, 46, 0.22);
+}
+
+.map-card:hover {
+  border-color: rgba(228, 87, 46, 0.55);
+}
+
 textarea#notes {
   width: 100%;
   min-height: 200px;
@@ -450,6 +469,16 @@ textarea#notes {
   max-width: 700px;
 }
 
+.topic-focus {
+  margin-top: 8px;
+  color: var(--sea);
+  font-weight: 600;
+}
+
+.topic-layout .chips {
+  gap: 10px;
+}
+
 .back-btn {
   border: none;
   background: var(--accent);
@@ -492,12 +521,19 @@ textarea#notes {
 }
 
 body.app-open main,
+body.topic-open main,
 body.app-open .top,
-body.app-open .footer {
+body.topic-open .top,
+body.app-open .footer,
+body.topic-open .footer {
   display: none;
 }
 
-body.app-open .app-view {
+body.app-open #applications-view {
+  display: block;
+}
+
+body.topic-open #topic-view {
   display: block;
 }
 

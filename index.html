@@ -130,6 +130,44 @@
       </div>
     </section>
 
+    <section class="app-view topic-view" id="topic-view" aria-hidden="true">
+      <div class="app-panel">
+        <button class="back-btn" id="topic-back" type="button" data-i18n="topic_back">Back to map</button>
+        <div class="app-hero">
+          <div class="app-eyebrow" data-i18n="topic_eyebrow">Topic deep dive</div>
+          <h2 id="topic-title"></h2>
+          <p id="topic-summary"></p>
+          <div class="topic-focus" id="topic-focus"></div>
+        </div>
+        <div class="two-column topic-layout">
+          <div>
+            <div class="app-section">
+              <h3 data-i18n="topic_core_title">Core ideas</h3>
+              <div class="list" id="topic-core"></div>
+            </div>
+            <div class="app-section">
+              <h3 data-i18n="topic_formula_title">Key formulas</h3>
+              <div class="list" id="topic-formulas"></div>
+            </div>
+          </div>
+          <div>
+            <div class="app-section">
+              <h3 data-i18n="topic_pitfall_title">Common pitfalls</h3>
+              <div class="list" id="topic-pitfalls"></div>
+            </div>
+            <div class="app-section">
+              <h3 data-i18n="topic_checklist_title">Self-check</h3>
+              <div class="list" id="topic-checklist"></div>
+            </div>
+            <div class="app-section">
+              <h3 data-i18n="topic_next_title">Next to review</h3>
+              <div class="chips" id="topic-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div data-i18n="footer">Made for calm, focused learning. Update the topics as your course evolves.</div>
       <div class="footer-contact">
